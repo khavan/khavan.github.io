@@ -1,12 +1,15 @@
 body {
     font-family: "Courier New", "Courier", monospace, sans-serif;
     font-size: 13px;
+}
 
+.full-page {
     display: flex;
     justify-content: center;
     align-items: center;
 
     height: 100vh;
+    width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
