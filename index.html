@@ -12,8 +12,9 @@ title: home
     <p>---</p>
     <section id="links">
         <ul>
-            <li>E:&nbsp;&nbsp;<a href="mailto:">khavan@gmail.com</a></li>
-            <li>GH: <a href="https://github.com/khavan">github.com/khavan</a></li>
+            {% for item in site.data.links %}
+                <li>{{item.name}}: <a href="{{item.url}}">{{item.text}}</a></li>
+            {% endfor %}
         </ul>
     </section>
     </div>

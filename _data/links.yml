@@ -1,0 +1,6 @@
+- name: "E"
+  url: "mailto:"
+  text: "khavan@gmail.com"
+- name: "GH"
+  url: "https://github.com/khavan"
+  text: "github.com/khavan"
