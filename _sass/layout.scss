@@ -1,0 +1,38 @@
+body {
+    font-family: "Courier New", "Courier", monospace, sans-serif;
+    font-size: 13px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 1.25em;
+}
+
+ul {
+    padding-left: 0;
+    list-style-position: inside;
+    list-style-type: "* ";
+}
+
+hr {
+    width: 32px;
+    margin: 1em 0;
+    border: 1px dashed black;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: black;
+        color: white;
+    }
+}
