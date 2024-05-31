@@ -1,0 +1,21 @@
+{% if include.float %}
+<nav style="float:{{include.float}};">
+{% else %}
+<nav>
+{% endif %}
+    {% for p in site.pages %}
+        {% if p.permalink == "/404.html" %}
+            {% continue %}
+        {% endif %}
+
+        {% if p.permalink == null %}
+            {% continue %}
+        {% endif %}
+
+        {% if p.title == page.title %}
+            {% continue %}
+        {% endif %}
+
+        <a href="{{p.permalink}}">{{p.title}}</a>
+    {% endfor %}
+</nav>

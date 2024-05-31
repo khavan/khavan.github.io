@@ -1,21 +1,20 @@
 ---
-layout: center
+layout: default
+type: full-page
 title: home
+permalink: /
 ---
 
-<div id="content">
-    <div id="center">
-    <header>
-        <h1>khavan guneratne</h1>
-        <em>developer</em>
-    </header>
-    <p>---</p>
-    <section id="links">
-        <ul>
-            {% for item in site.data.links %}
-                <li>{{item.name}}: <a href="{{item.url}}">{{item.text}}</a></li>
-            {% endfor %}
-        </ul>
-    </section>
-    </div>
-</div>
+{% include header.html 
+    title='khavan guneratne' 
+    subtitle='developer' 
+    %}
+<section id="links">
+    <ul>
+        {% for item in site.data.links %}
+            <li>{{item.name}}: <a href="{{item.url}}">{{item.text}}</a></li>
+        {% endfor %}
+    </ul>
+</section>
+<br />
+{% include nav.html float='left' %}
